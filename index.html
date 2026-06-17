@@ -2,459 +2,250 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alejandro Orozco — Especialista en Automatización & IA</title>
-<script type="text/javascript" src="https://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=pJINbF1JrqgnVwEmrSbUpYpe4mYG9oB80WY3wZ6DC0oYu3YrEEHO09qZ-aOEXUWXxSuyU-mOowGyOG3zJM6K1SJtk7O5IVGcrH1SQfeelLgG8ym6h2dP-gPD8rX7lOkPJXnyBhPUxuWHnU5ljjNQia7IP6OJhmD2oxEbXA1GrnxO6izUTEu_IYK831mYzYiiMGtpGpkO9d626ayr4vIewWz8RG4lb0FREbrZjmP-xh3PWNffpoJ3fCMGOaaszpza3NGJ10Pxmjpw8tci7BcVLEzdMSqQp8VJoTRBTbH8U_ZriMIic14NLs_LEgLPt4Mn2vubd5zDJ4XeHj3ykwx5razAmlXBDCV5M07FpD2dcxC-bayh0sG62_0tJ62qehPYScSIIY8cWSs7sB4rBejQCAju47ok46bLBQmX26SnpJVTKfJjxiBERy_BU_74Y_uZbHCMlVSVJYJg34wFJqQDMd1Q0vUakf--c8JcidVai0j6FYFDUphQaOnVN7nrg-cLPzbwxwz0Rzc8f8rxhUZm4-GEgk_HYsR0mb7zOyJhGm6WC43kGh3CWVfttDQG_XoOJQyRrKxY7yPNZeNvQHvOU3O4mOljSqRUzoW5-7FVoCwXD111D80dKUdYD484QEYLlFMGn7k1t5UcZLUTDrg8GyjknaChr-gUeKfmSUSXPBsI22rZO3PK7MSrL-xJ6TPv" charset="UTF-8"></script><style>
-  :root {
-    --primary: #1e3a8a;
-    --accent: #0ea5e9;
-    --dark: #0f172a;
-    --text: #334155;
-    --light: #f8fafc;
-    --border: #e2e8f0;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    background: #f1f5f9;
-    color: var(--text);
-    line-height: 1.5;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-  .container {
-    max-width: 1000px;
-    margin: 20px auto;
-    background: #fff;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  header {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-    color: #fff;
-    padding: 28px 40px 20px;
-  }
-  header h1 { font-size: 1.9rem; font-weight: 800; letter-spacing: -0.3px; }
-  .title-badge {
-    display: inline-block;
-    background: rgba(255,255,255,0.18);
-    padding: 4px 12px;
-    border-radius: 16px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin: 6px 0 10px;
-    border: 1px solid rgba(255,255,255,0.25);
-  }
-  .contact-bar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    font-size: 0.82rem;
-    opacity: 0.92;
-  }
-  .contact-bar a { color: #fff; text-decoration: none; }
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Alejandro Orozco — Automatización & IA</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#fff;color:#333;line-height:1.5;font-size:15px}
+.container{max-width:700px;margin:0 auto;padding:0 16px}
+header{background:#1e3a8a;color:#fff;padding:20px 16px;text-align:center}
+header h1{font-size:1.5rem;font-weight:800;margin-bottom:4px}
+.badge{background:rgba(255,255,255,.2);display:inline-block;padding:4px 12px;border-radius:16px;font-size:.75rem;font-weight:600;margin-bottom:8px}
+.contact{font-size:.8rem;opacity:.9}
+.contact a{color:#fff;text-decoration:none}
 
-  main { padding: 18px 40px 30px; }
-  section { margin-bottom: 20px; }
-  h2 {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--primary);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-    padding-bottom: 6px;
-    border-bottom: 2px solid var(--border);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  h2 .icon { font-size: 1.1rem; }
+.metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;padding:12px 0}
+.metric{background:#1e3a8a;color:#fff;padding:10px;border-radius:6px;text-align:center}
+.metric b{font-size:1.3rem;display:block}
+.metric span{font-size:.65rem;opacity:.9}
 
-  .metrics {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin-bottom: 16px;
-  }
-  .metric-box {
-    background: linear-gradient(135deg, var(--primary), var(--accent));
-    color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  .metric-number { font-size: 1.3rem; font-weight: 800; display: block; }
-  .metric-label { font-size: 0.65rem; opacity: 0.9; text-transform: uppercase; letter-spacing: 0.5px; }
+section{margin-bottom:20px}
+h2{font-size:.85rem;color:#1e3a8a;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;padding-bottom:6px;border-bottom:2px solid #e2e8f0;font-weight:700}
 
-  .summary {
-    background: var(--light);
-    border-left: 3px solid var(--accent);
-    padding: 12px 14px;
-    border-radius: 0 6px 6px 0;
-    font-size: 0.85rem;
-    color: #475569;
-  }
-  .highlight {
-    background: linear-gradient(120deg, #dbeafe 0%, #dbeafe 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 35%;
-    background-position: 0 90%;
-    padding: 0 2px;
-    font-weight: 600;
-    color: var(--primary);
-  }
+.summary{background:#f8fafc;border-left:3px solid #0ea5e9;padding:12px;font-size:.85rem;color:#475569}
+.highlight{background:#dbeafe;padding:0 2px;font-weight:600;color:#1e3a8a}
 
-  .job { margin-bottom: 14px; }
-  .job-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: 4px;
-  }
-  .job-title { font-weight: 700; font-size: 0.92rem; color: var(--dark); }
-  .job-company { font-weight: 600; color: var(--primary); font-size: 0.9rem; }
-  .job-date { font-size: 0.78rem; color: #64748b; font-weight: 500; }
-  .job ul { margin-top: 4px; padding-left: 16px; font-size: 0.82rem; }
-  .job li { margin-bottom: 3px; }
-  .job li::marker { color: var(--accent); }
+.job{margin-bottom:14px}
+.job-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px;margin-bottom:4px}
+.job-title{font-weight:700;font-size:.9rem;color:#0f172a}
+.job-company{color:#1e3a8a;font-weight:600;font-size:.85rem}
+.job-date{font-size:.75rem;color:#64748b}
+.job ul{padding-left:16px;font-size:.82rem;margin-top:4px}
+.job li{margin-bottom:3px}
+.job li::marker{color:#0ea5e9}
 
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
-  .project-card {
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 12px;
-    background: #fff;
-  }
-  .project-card h3 {
-    font-size: 0.82rem;
-    color: var(--primary);
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  .project-card p { font-size: 0.75rem; color: #64748b; line-height: 1.45; }
-  .tag {
-    display: inline-block;
-    font-size: 0.62rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    padding: 2px 6px;
-    border-radius: 3px;
-    background: #eff6ff;
-    color: var(--primary);
-    margin-top: 6px;
-    margin-right: 3px;
-  }
-  .tag.erp { background: #fef3c7; color: #92400e; }
-  .tag.ia { background: #f0fdf4; color: #166534; }
-  .tag.cloud { background: #f5f3ff; color: #5b21b6; }
+.projects{display:grid;grid-template-columns:1fr;gap:10px}
+.project{border:1px solid #e2e8f0;border-radius:8px;padding:12px;background:#fff}
+.project h3{font-size:.82rem;color:#1e3a8a;margin-bottom:4px;font-weight:700}
+.project p{font-size:.75rem;color:#64748b;line-height:1.4}
+.tag{display:inline-block;font-size:.65rem;font-weight:600;text-transform:uppercase;padding:2px 6px;border-radius:3px;background:#eff6ff;color:#1e3a8a;margin-top:6px;margin-right:3px}
+.tag.erp{background:#fef3c7;color:#92400e}
+.tag.ia{background:#f0fdf4;color:#166534}
+.tag.cloud{background:#f5f3ff;color:#5b21b6}
 
-  .skills-wrap { display: flex; flex-wrap: wrap; gap: 6px; }
-  .skill {
-    background: var(--light);
-    border: 1px solid var(--border);
-    padding: 3px 10px;
-    border-radius: 14px;
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--dark);
-  }
-  .skill.ia { background: #f0fdf4; border-color: #bbf7d0; color: #166534; }
-  .skill.cloud { background: #eff6ff; border-color: #bfdbfe; color: #1e40af; }
-  .skill.auto { background: #fef3c7; border-color: #fde68a; color: #92400e; }
+.skills{display:flex;flex-wrap:wrap;gap:6px}
+.skill{background:#f8fafc;border:1px solid #e2e8f0;padding:3px 10px;border-radius:14px;font-size:.75rem;font-weight:500}
+.skill.ia{background:#f0fdf4;border-color:#bbf7d0;color:#166534}
+.skill.cloud{background:#eff6ff;border-color:#bfdbfe;color:#1e40af}
+.skill.auto{background:#fef3c7;border-color:#fde68a;color:#92400e}
 
-  .edu-item { margin-bottom: 6px; }
-  .edu-degree { font-weight: 700; color: var(--dark); font-size: 0.85rem; }
-  .edu-school { font-size: 0.8rem; color: #64748b; }
+.edu{font-size:.85rem;margin-bottom:6px}
+.edu b{font-weight:700;color:#0f172a}
+.edu span{color:#64748b;font-size:.8rem}
 
-  .two-col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
+.two-col{display:grid;grid-template-columns:1fr;gap:16px}
 
-  @media print {
-    body { background: #fff; }
-    .container { box-shadow: none; margin: 0; border-radius: 0; }
-    main { padding: 15px 30px; }
-    .project-card { break-inside: avoid; }
-  }
-  @media (max-width: 768px) {
-    .projects-grid { grid-template-columns: 1fr; }
-    .metrics { grid-template-columns: repeat(2, 1fr); }
-    .two-col { grid-template-columns: 1fr; }
-    header { padding: 20px 24px; }
-    main { padding: 15px 24px; }
-  }
+@media(min-width:600px){
+.metrics{grid-template-columns:repeat(4,1fr)}
+.projects{grid-template-columns:repeat(2,1fr)}
+.two-col{grid-template-columns:1fr 1fr}
+}
+@media(min-width:900px){
+.projects{grid-template-columns:repeat(3,1fr)}
+}
 </style>
+<base target="_blank">
 </head>
 <body>
 
 <div class="container">
   <header>
+    <div class="badge">Especialista en Automatización & IA</div>
     <h1>Alejandro Orozco Arriaga</h1>
-    <div class="title-badge">Especialista en Automatización & IA Aplicada al Negocio</div>
-    <div class="contact-bar">
-      <span>📍 Tampico, Tamaulipas</span>
-      <span>📱 833 103 9399</span>
-      <span>✉️ <a href="mailto:joseluisoa69@gmail.com">joseluisoa69@gmail.com</a></span>
+    <div class="contact">
+      📍 Tampico, Tamps. | 📱 833 103 9399 | ✉️ <a href="mailto:joseluisoa69@gmail.com">joseluisoa69@gmail.com</a>
     </div>
   </header>
 
-  <main>
-    <!-- Métricas -->
-    <div class="metrics">
-      <div class="metric-box">
-        <span class="metric-number">99.8%</span>
-        <span class="metric-label">Precisión Inventarios</span>
+  <div class="metrics">
+    <div class="metric"><b>99.8%</b><span>Precisión Inventarios</span></div>
+    <div class="metric"><b>80%</b><span>Reducción Tiempo Inv.</span></div>
+    <div class="metric"><b>75%</b><span>Reducción Reportes</span></div>
+    <div class="metric"><b>12+</b><span>Sistemas Digitales</span></div>
+  </div>
+
+  <section>
+    <h2>🎯 Perfil Profesional</h2>
+    <div class="summary">
+      Ingeniero Industrial con trayectoria en <span class="highlight">automatización de procesos, transformación digital e IA aplicada</span>. Especializado en reemplazar flujos en papel por soluciones digitales integradas, reduciendo tiempos operativos hasta 80%. Combino <span class="highlight">Firebase, Supabase, Google Apps Script, React y Python</span> con orientación consultiva al negocio, capacitando usuarios e identificando oportunidades de mejora continua.
+    </div>
+  </section>
+
+  <section>
+    <h2>💼 Experiencia Profesional</h2>
+
+    <div class="job">
+      <div class="job-top">
+        <div><span class="job-title">Jefe de Almacén / Coordinador de Refacciones</span> — <span class="job-company">Flex Américas SA de CV</span></div>
+        <span class="job-date">Jul 2022 — Actualidad</span>
       </div>
-      <div class="metric-box">
-        <span class="metric-number">80%</span>
-        <span class="metric-label">Reducción Tiempo Inv.</span>
-      </div>
-      <div class="metric-box">
-        <span class="metric-number">75%</span>
-        <span class="metric-label">Reducción Reportes</span>
-      </div>
-      <div class="metric-box">
-        <span class="metric-number">12+</span>
-        <span class="metric-label">Sistemas Digitales</span>
-      </div>
+      <ul>
+        <li><strong>Automatización integral del almacén:</strong> Reemplacé procesos en papel por un <span class="highlight">ERP digital propio</span> con 9 módulos interconectados, reduciendo tiempo de inventarios en <strong>80%</strong> (4 hrs → 45 min).</li>
+        <li><strong>IA predictiva:</strong> Algoritmo que cruza órdenes de compra vs stock físico, enviando <strong>alertas proactivas de sobrecompra</strong> a compradores y gerencia.</li>
+        <li><strong>Dashboards automáticos:</strong> Reportes estratégicos (KPIs, ABC, mermas) a Alta Gerencia <strong>sin intervención manual</strong>, ahorrando 15 hrs/semana.</li>
+        <li><strong>Inventario cíclico digital:</strong> App web con validación automática vs ERP Oracle, alcanzando <strong>99.8% precisión</strong> y eliminando mermas.</li>
+        <li><strong>Gestión ABC + reorden:</strong> Clasificación automatizada con alertas de desabasto, reduciendo faltantes en producción en <strong>90%</strong>.</li>
+        <li><strong>Trazabilidad total:</strong> Seguimiento de activos con QR y ubicación inteligente, <strong>100% trazabilidad</strong>, búsqueda de 30 min → 2 min.</li>
+        <li><strong>Liderazgo digital:</strong> Capacité al equipo en apps web/tablets, eliminando dependencia de conocimiento tribal.</li>
+      </ul>
     </div>
 
-    <!-- Perfil -->
-    <section>
-      <h2><span class="icon">🎯</span> Perfil Profesional</h2>
-      <div class="summary">
-        Ingeniero Industrial con trayectoria en <span class="highlight">automatización de procesos, transformación digital e IA aplicada</span>. Especializado en reemplazar flujos en papel por soluciones digitales integradas, logrando reducir tiempos operativos hasta 80%. Combino <span class="highlight">Firebase, Supabase, Google Apps Script, React y Python</span> con orientación consultiva al negocio, capacitando usuarios e identificando oportunidades de mejora continua. No soy un dev puro; soy un puente entre tecnología y resultados operativos.
+    <div class="job">
+      <div class="job-top">
+        <div><span class="job-title">Ingeniero de Campo</span> — <span class="job-company">Dragados Offshore</span></div>
+        <span class="job-date">2018 — 2020</span>
       </div>
-    </section>
-
-    <!-- Experiencia -->
-    <section>
-      <h2><span class="icon">💼</span> Experiencia Profesional</h2>
-
-      <div class="job">
-        <div class="job-header">
-          <div>
-            <span class="job-title">Jefe de Almacén / Coordinador de Refacciones</span> — 
-            <span class="job-company">Flex Américas SA de CV</span>
-          </div>
-          <span class="job-date">Jul 2022 — Actualidad | Altamira, Tamps.</span>
-        </div>
-        <ul>
-          <li><strong>Automatización integral del almacén:</strong> Reemplacé procesos en papel (entradas, inventarios, pases de turno, responsivas) por un <span class="highlight">ERP digital propio</span> con 9 módulos interconectados, reduciendo el tiempo de inventarios generales en un <strong>80%</strong> (de 4 hrs a 45 min).</li>
-          <li><strong>IA predictiva aplicada:</strong> Desarrollé un algoritmo que cruza órdenes de compra en tránsito contra stock físico en tiempo real, enviando <strong>alertas proactivas de sobrecompra</strong> a compradores y gerencia, evitando saturación de espacio y sobreinversión.</li>
-          <li><strong>Dashboards y reportes automáticos:</strong> Tableros dinámicos conectados a ERP Oracle/SAP que generan y envían reportes estratégicos (KPIs, ABC, mermas) a Alta Gerencia <strong>sin intervención manual</strong>, ahorrando 15 hrs/semana.</li>
-          <li><strong>Control de inventarios cíclico digital:</strong> App web para conteos físicos con validación automática vs ERP, alcanzando <strong>99.8% de precisión</strong> y eliminación total de mermas operativas.</li>
-          <li><strong>Gestión ABC y puntos de reorden:</strong> Clasificación automatizada de materiales con cálculo de máximos/mínimos y alertas de desabasto, reduciendo faltantes en línea de producción en un <strong>90%</strong>.</li>
-          <li><strong>Trazabilidad total:</strong> Sistema digital de seguimiento de activos con QR y ubicación inteligente, logrando <strong>100% de trazabilidad</strong> en flujo de retorno y reduciendo tiempo de búsqueda de 30 min a 2 min.</li>
-          <li><strong>Liderazgo digital:</strong> Capacité al equipo operativo en el uso de apps web y tablets, eliminando la dependencia de conocimiento tribal y estandarizando procesos en todos los turnos.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-header">
-          <div>
-            <span class="job-title">Ingeniero de Campo</span> — 
-            <span class="job-company">Dragados Offshore</span>
-          </div>
-          <span class="job-date">2018 — 2020 | Pueblo Viejo, Ver.</span>
-        </div>
-        <ul>
-          <li>Reduje <strong>75% el tiempo de reportes técnicos</strong> (60→15 min) automatizando formatos en Excel/Google Sheets.</li>
-          <li>Monitoreo 100% del avance físico vs. programado mediante tableros dinámicos.</li>
-          <li>98% aprobación en primera revisión de expedientes ante estándares internacionales.</li>
-          <li>Cero Incidentes de Tiempo Perdido en maniobras críticas.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-header">
-          <div>
-            <span class="job-title">Auxiliar Almacenista</span> — 
-            <span class="job-company">Grupo Industrial Águila</span>
-          </div>
-          <span class="job-date">2017 — 2018 | Altamira, Tamps.</span>
-        </div>
-        <ul>
-          <li>Optimización de espacio físico con etiquetado estratégico y metodología <strong>5S</strong>.</li>
-          <li>Gestión de entradas/salidas con <strong>0% de discrepancia</strong> en entregas.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Proyectos ERP FlexFilm -->
-    <section>
-      <h2><span class="icon">🏭</span> Proyectos ERP — FlexFilm Almacén (Automatización & IA)</h2>
-      <div class="projects-grid">
-
-        <div class="project-card">
-          <h3>📦 Registro de Entradas de Material</h3>
-          <p>Sistema digital que reemplaza el registro en papel. Busca POs en tiempo real, genera etiquetas con QR, envía notificaciones a Telegram y guarda todo en ERP.</p>
-          <span class="tag erp">Google Apps Script</span>
-          <span class="tag erp">QR</span>
-          <span class="tag erp">Telegram API</span>
-        </div>
-
-        <div class="project-card">
-          <h3>📊 Control de Inventario Cíclico</h3>
-          <p>App web para conteos físicos con validación automática vs ERP Oracle. Detecta discrepancias en tiempo real, genera histórico de hallazgos y colorea diferencias.</p>
-          <span class="tag erp">ERP Integration</span>
-          <span class="tag erp">Validación Auto</span>
-          <span class="tag erp">Histórico</span>
-        </div>
-
-        <div class="project-card">
-          <h3>⚠️ Gestión de Pendientes GIN</h3>
-          <p>Formulario digital para reportar material con problemas. Sube fotos a Drive, envía emails con formato profesional al comprador y crea ID de seguimiento.</p>
-          <span class="tag erp">Drive API</span>
-          <span class="tag erp">MailApp</span>
-          <span class="tag erp">Tracking</span>
-        </div>
-
-        <div class="project-card">
-          <h3>📝 Carta Responsiva Digital</h3>
-          <p>Sustituye formatos físicos de préstamo de herramientas. Captura firma digital, foto de evidencia, genera PDF automático y guarda en carpeta de Drive por empleado.</p>
-          <span class="tag erp">Firma Digital</span>
-          <span class="tag erp">PDF Auto</span>
-          <span class="tag erp">Drive</span>
-        </div>
-
-        <div class="project-card">
-          <h3>👷 Control de Uniformes y Overoles</h3>
-          <p>Sistema de entrega de uniformes con padrón sincronizado, tallas, conformidad digital y firma electrónica. Sincroniza altas/bajas automáticamente cada semana.</p>
-          <span class="tag erp">Sync Auto</span>
-          <span class="tag erp">Conformidad</span>
-          <span class="tag erp">Cron Jobs</span>
-        </div>
-
-        <div class="project-card">
-          <h3>🔄 Pase de Turno Digital</h3>
-          <p>Reemplaza el pase de turno en papel. Captura fotos de áreas (rampa, inspect, paquetería), registra incidencias, GINs y envía resumen por email automáticamente.</p>
-          <span class="tag erp">Fotos Auto</span>
-          <span class="tag erp">Email Auto</span>
-          <span class="tag erp">Responsables</span>
-        </div>
-
-        <div class="project-card">
-          <h3>🤖 Alerta Proactiva de Sobrecompra (IA)</h3>
-          <p>Algoritmo que cruza órdenes de compra en tránsito contra inventario físico. Detecta compras redundantes y alerta a compradores antes de que llegue el material.</p>
-          <span class="tag ia">IA Predictiva</span>
-          <span class="tag ia">Cross-Data</span>
-          <span class="tag ia">Alertas Auto</span>
-        </div>
-
-        <div class="project-card">
-          <h3>📍 Asignación Inteligente de Tareas</h3>
-          <p>Sistema que asigna automáticamente tareas de unificación de material fragmentado según turno, cuota y disponibilidad del equipo. Envía CSV personalizado por email.</p>
-          <span class="tag ia">Asignación Auto</span>
-          <span class="tag ia">CSV Report</span>
-          <span class="tag ia">Turnos</span>
-        </div>
-
-        <div class="project-card">
-          <h3>📧 Reporte Diario/Semanal Automático</h3>
-          <p>Triggers programados que envían reportes de entradas, vales abiertos y GINs pendientes a gerencia vía email y Telegram sin intervención humana.</p>
-          <span class="tag auto">Triggers</span>
-          <span class="tag auto">Email Auto</span>
-          <span class="tag auto">Telegram</span>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Proyectos Personales/Externos -->
-    <section>
-      <h2><span class="icon">🚀</span> Proyectos Adicionales de Automatización & IA</h2>
-      <div class="projects-grid">
-
-        <div class="project-card">
-          <h3>🏋️ GYM Black — App de Entrenamiento con IA</h3>
-          <p>App web progresiva con generación de rutinas personalizadas mediante IA, sistema de rachas tipo Duolingo, seguimiento de progreso por peso/músculo y campos editables para series/reps.</p>
-          <span class="tag cloud">React</span>
-          <span class="tag cloud">Supabase Auth</span>
-          <span class="tag ia">IA Generativa</span>
-          <span class="tag cloud">Vercel</span>
-        </div>
-
-        <div class="project-card">
-          <h3>📋 Sistema de Solicitud de Vacaciones</h3>
-          <p>Reemplazó el proceso en papel y "búsqueda de firmas físicas". Flujo de aprobación digital con roles (jefe, nóminas, RH) y notificaciones automáticas. Los empleados ya no abandonan su área.</p>
-          <span class="tag auto">Workflow</span>
-          <span class="tag auto">Roles</span>
-          <span class="tag auto">Aprobación Digital</span>
-        </div>
-
-        <div class="project-card">
-          <h3>🔐 Sistema QR de Entradas — Quantum</h3>
-          <p>Control de acceso para proyecto temporal en Quantum. Escaneo de QR para registro de entrada/salida de personal, eliminando listas en papel y reportes de asistencia en tiempo real.</p>
-          <span class="tag cloud">QR Scan</span>
-          <span class="tag cloud">Firebase Auth</span>
-          <span class="tag cloud">Realtime DB</span>
-        </div>
-
-        <div class="project-card">
-          <h3>📊 Wizard de Envío de Reportes</h3>
-          <p>Interfaz paso a paso que guía a usuarios no técnicos en la generación y envío de reportes operativos. Reduce errores de formato y valida datos antes del envío.</p>
-          <span class="tag auto">UX/UI</span>
-          <span class="tag auto">Validación</span>
-          <span class="tag auto">Wizard</span>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Competencias -->
-    <section>
-      <h2><span class="icon">⚡</span> Competencias Técnicas</h2>
-      <div class="skills-wrap">
-        <span class="skill ia">IA Generativa (ChatGPT, Claude, APIs)</span>
-        <span class="skill cloud">Firebase (Auth, Firestore, Realtime DB)</span>
-        <span class="skill cloud">Supabase (Auth, PostgreSQL, Storage)</span>
-        <span class="skill auto">Google Apps Script / Workspace</span>
-        <span class="skill auto">Microsoft 365 / Power Automate</span>
-        <span class="skill">React / Vite / TypeScript</span>
-        <span class="skill">Python (Automatización)</span>
-        <span class="skill">Excel Avanzado (Macros/VBA)</span>
-        <span class="skill">SQL / NoSQL</span>
-        <span class="skill">REST APIs / JSON</span>
-        <span class="skill">Git / GitHub / Vercel</span>
-        <span class="skill">ERP Oracle / SAP</span>
-        <span class="skill">Lean Manufacturing / 5S</span>
-        <span class="skill">KPIs Logísticos / ABC</span>
-        <span class="skill">Autodesk Inventor</span>
-      </div>
-    </section>
-
-    <div class="two-col">
-      <section>
-        <h2><span class="icon">🎓</span> Educación</h2>
-        <div class="edu-item">
-          <div class="edu-degree">Ingeniería en Mantenimiento Industrial</div>
-          <div class="edu-school">Universidad Tecnológica de Altamira — 2013-2017</div>
-        </div>
-      </section>
-      <section>
-        <h2><span class="icon">🌐</span> Idiomas</h2>
-        <div class="skills-wrap">
-          <span class="skill">Español — Nativo</span>
-          <span class="skill">Inglés — Básico (en progreso)</span>
-        </div>
-      </section>
+      <ul>
+        <li>Reduje <strong>75% el tiempo de reportes técnicos</strong> (60→15 min) automatizando formatos en Excel/Google Sheets.</li>
+        <li>Monitoreo 100% del avance físico vs. programado mediante tableros dinámicos.</li>
+        <li>98% aprobación en primera revisión de expedientes ante estándares internacionales.</li>
+        <li>Cero Incidentes de Tiempo Perdido en maniobras críticas.</li>
+      </ul>
     </div>
 
-  </main>
+    <div class="job">
+      <div class="job-top">
+        <div><span class="job-title">Auxiliar Almacenista</span> — <span class="job-company">Grupo Industrial Águila</span></div>
+        <span class="job-date">2017 — 2018</span>
+      </div>
+      <ul>
+        <li>Optimización de espacio físico con etiquetado estratégico y metodología <strong>5S</strong>.</li>
+        <li>Gestión de entradas/salidas con <strong>0% de discrepancia</strong> en entregas.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>🏭 Proyectos ERP — FlexFilm Almacén</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>📦 Registro de Entradas de Material</h3>
+        <p>Busca POs en tiempo real, genera etiquetas QR, notifica vía Telegram y guarda en ERP.</p>
+        <span class="tag erp">Google Apps Script</span><span class="tag erp">QR</span><span class="tag erp">Telegram</span>
+      </div>
+      <div class="project">
+        <h3>📊 Control de Inventario Cíclico</h3>
+        <p>Conteos físicos con validación automática vs ERP Oracle, detección de discrepancias en tiempo real.</p>
+        <span class="tag erp">ERP Integration</span><span class="tag erp">Validación Auto</span><span class="tag erp">Histórico</span>
+      </div>
+      <div class="project">
+        <h3>⚠️ Gestión de Pendientes GIN</h3>
+        <p>Reporta material con problemas, sube fotos a Drive, envía emails al comprador con ID de seguimiento.</p>
+        <span class="tag erp">Drive API</span><span class="tag erp">MailApp</span><span class="tag erp">Tracking</span>
+      </div>
+      <div class="project">
+        <h3>📝 Carta Responsiva Digital</h3>
+        <p>Firma digital, foto de evidencia, PDF automático y carpeta en Drive por empleado.</p>
+        <span class="tag erp">Firma Digital</span><span class="tag erp">PDF Auto</span><span class="tag erp">Drive</span>
+      </div>
+      <div class="project">
+        <h3>👷 Control de Uniformes y Overoles</h3>
+        <p>Padrón sincronizado, tallas, conformidad digital, firma electrónica y sync semanal de altas/bajas.</p>
+        <span class="tag erp">Sync Auto</span><span class="tag erp">Conformidad</span><span class="tag erp">Cron Jobs</span>
+      </div>
+      <div class="project">
+        <h3>🔄 Pase de Turno Digital</h3>
+        <p>Fotos de áreas, registro de incidencias, GINs y resumen por email automático.</p>
+        <span class="tag erp">Fotos Auto</span><span class="tag erp">Email Auto</span><span class="tag erp">Responsables</span>
+      </div>
+      <div class="project">
+        <h3>🤖 Alerta Proactiva de Sobrecompra (IA)</h3>
+        <p>Cruza órdenes de compra vs stock físico, detecta compras redundantes y alerta antes de que llegue.</p>
+        <span class="tag ia">IA Predictiva</span><span class="tag ia">Cross-Data</span><span class="tag ia">Alertas Auto</span>
+      </div>
+      <div class="project">
+        <h3>📍 Asignación Inteligente de Tareas</h3>
+        <p>Asigna tareas de unificación según turno, cuota y disponibilidad. Envía CSV por email.</p>
+        <span class="tag ia">Asignación Auto</span><span class="tag ia">CSV Report</span><span class="tag ia">Turnos</span>
+      </div>
+      <div class="project">
+        <h3>📧 Reporte Diario/Semanal Automático</h3>
+        <p>Triggers programados envían reportes de entradas, vales y GINs vía email y Telegram.</p>
+        <span class="tag auto">Triggers</span><span class="tag auto">Email Auto</span><span class="tag auto">Telegram</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🚀 Proyectos Adicionales</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>🏋️ GYM Black — App de Entrenamiento con IA</h3>
+        <p>Rutinas personalizadas con IA, sistema de rachas, seguimiento de progreso por peso/músculo.</p>
+        <span class="tag cloud">React</span><span class="tag cloud">Supabase Auth</span><span class="tag ia">IA Generativa</span><span class="tag cloud">Vercel</span>
+      </div>
+      <div class="project">
+        <h3>📋 Sistema de Solicitud de Vacaciones</h3>
+        <p>Reemplazó papel y firmas físicas. Flujo digital con roles (jefe, nóminas, RH) y notificaciones.</p>
+        <span class="tag auto">Workflow</span><span class="tag auto">Roles</span><span class="tag auto">Aprobación Digital</span>
+      </div>
+      <div class="project">
+        <h3>🔐 Sistema QR de Entradas — Quantum</h3>
+        <p>Control de acceso con QR para registro entrada/salida, eliminando listas en papel.</p>
+        <span class="tag cloud">QR Scan</span><span class="tag cloud">Firebase Auth</span><span class="tag cloud">Realtime DB</span>
+      </div>
+      <div class="project">
+        <h3>📊 Wizard de Envío de Reportes</h3>
+        <p>Interfaz paso a paso para usuarios no técnicos, reduce errores y valida datos antes de enviar.</p>
+        <span class="tag auto">UX/UI</span><span class="tag auto">Validación</span><span class="tag auto">Wizard</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>⚡ Competencias Técnicas</h2>
+    <div class="skills">
+      <span class="skill ia">IA Generativa</span>
+      <span class="skill cloud">Firebase</span>
+      <span class="skill cloud">Supabase</span>
+      <span class="skill auto">Google Apps Script</span>
+      <span class="skill auto">Power Automate</span>
+      <span class="skill">React / Vite</span>
+      <span class="skill">Python</span>
+      <span class="skill">Excel VBA</span>
+      <span class="skill">SQL / NoSQL</span>
+      <span class="skill">REST APIs</span>
+      <span class="skill">Git / GitHub</span>
+      <span class="skill">ERP Oracle / SAP</span>
+      <span class="skill">Lean / 5S</span>
+      <span class="skill">KPIs / ABC</span>
+    </div>
+  </section>
+
+  <div class="two-col">
+    <section>
+      <h2>🎓 Educación</h2>
+      <div class="edu"><b>Ingeniería en Mantenimiento Industrial</b><br><span>Universidad Tecnológica de Altamira — 2013-2017</span></div>
+    </section>
+    <section>
+      <h2>🌐 Idiomas</h2>
+      <div class="skills">
+        <span class="skill">Español — Nativo</span>
+        <span class="skill">Inglés — Básico</span>
+      </div>
+    </section>
+  </div>
+
 </div>
-
 </body>
 </html>
